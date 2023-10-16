@@ -4,6 +4,13 @@
 #include "client.h"
 #include "server.h"
 
+void  show_pending_transactions()
+{
+	std::cout  <<  std::string(20, '*') <<  std::endl;
+	for(const  auto& trx : pending_trxs)
+		std::cout << trx <<  std::endl;
+	std::cout  <<  std::string(20, '*') <<  std::endl;
+}
 
 int main(int argc, char **argv)
 {
